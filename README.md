@@ -1,6 +1,8 @@
 # logupdate
 > Single-line log updater for vlang
 
+[![Build Status](https://travis-ci.org/perry-mitchell/logupdate.svg?branch=master)](https://travis-ci.org/perry-mitchell/logupdate)
+
 Update the current terminal line by overwriting it - useful for displaying progress bars/animations while some work is done.
 
 ![logupdate animation](demo.gif)
