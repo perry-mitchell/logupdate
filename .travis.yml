@@ -1,0 +1,19 @@
+sudo: required
+
+os:
+    - linux
+
+addons:
+    apt:
+        packages:
+            - g++ 7
+
+install:
+    - wget https://github.com/vlang/v/releases/latest/download/v_linux.zip
+    - sudo unzip v_linux.zip -d /opt/
+    - rm v_linux.zip
+    - export PATH=/opt/v:$PATH
+    - v --version
+
+script:
+    - make test
